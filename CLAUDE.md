@@ -31,4 +31,3 @@ The csproj disables the x86/arm64 libvlc copies (`VlcWindowsX86Enabled`/`VlcWind
 ## Gotchas
 
 - Windows Firewall may prompt about the exe (once per exe path). The app opens no listening sockets, so don't add firewall rules; Cancel is fine. Never click the prompt in automated UI tests: it's always on top and intercepts synthetic clicks.
-- This repo is nested inside a repo that covers the user's whole home directory (`%USERPROFILE%`), so run git commands from this folder.
